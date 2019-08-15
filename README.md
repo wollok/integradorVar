@@ -47,36 +47,46 @@ Si el segundo tiempo tuvo más jugadas registradas que el primer tiempo (asumir 
 Construir dos tests, uno donde una jugada con un determinado modo de funcionamiento del var no sea gol, y otro donde la misma jugada, con otro modo, sí lo sea. 
 Testear un partido con el VAR fifa en el que brasil le gana a paraguay 2 a 0, a brasil le sacan 5 tarjetas y a paraguay 3.
 
-#### Ejemplo de desarrollo de un partido
-
-
-![]("jugada min 5.jpg")
-
-Jugada de gol de Brasil:
-5' Con cualquier VAR el gol vale, porque no hay situaciones especiales
-
-10' Falta de mucha intensidad. Tarjeta para Paraguay
-
-34' Pelea multitudinaria entre ambos equipos. Tarjetas para todos, 4 Brasil y 2 Paraguay
-
-Jugada de gol de Brasil:
-40' Con el VAR en modo fifa, el gol vale, porque Brasil ganó mundiales, en modo justicia no vale porque está adelantado. 
-
-41' Insulto al referí con palabras inapropiadas. Tarjeta para Brasil
-
-60' Jugada cualquiera, que no corresponde tarjeta ni gol
-
-80' Jugada cualquiera, que no corresponde tarjeta ni gol
-
-Jugada de gol de Paraguay:
-89' Con el VAR en modo fifa, el gol no vale, porque Paraguay no ganó mundiales, en modo justicia tampoco, porque no pasó la pelota
-
-
-**Resultado esperado del partido con otros modos de VAR:**
-
-* Con VAR justicia ciega, el gol de Brasil se anula y termina 1 a 0
-* Con VAR mas goles, el gol de Paraguay se convalida y termina 2 a 1
 
 ### 5) Para explicar
 Justificar la utilidad del concepto de polimorfismo y de la herencia en la solución
+
+
+### Ejemplo de desarrollo de un partido
+(Con VAR en modo fifa)
+
+![](jugadaMin5.jpg)
+Jugada de gol de Brasil:
+5' El gol vale, porque no hay situaciones especiales
+
+![](jugadaMin10.jpg)
+10' Falta de mucha intensidad. Tarjeta para Paraguay
+
+![](jugadaMin34.jpg)
+34' Pelea multitudinaria entre ambos equipos. Tarjetas para todos, 4 Brasil y 2 Paraguay
+
+![](jugadaMin40.jpg)
+Jugada de gol de Brasil:
+40' El gol vale, porque Brasil ganó mundiales, en modo justicia no vale porque está adelantado. 
+
+![](jugadaMin41.jpg)
+41' Insulto al referí con palabras inapropiadas. Tarjeta para Brasil
+
+![](jugadaMin60.jpg)
+60' Jugada cualquiera, que no corresponde tarjeta ni gol
+
+![](jugadaMin80.jpg)
+80' Jugada cualquiera, que no corresponde tarjeta ni gol
+
+![](jugadaMin89.jpg)
+Jugada de gol de Paraguay:
+89' El gol no vale, porque Paraguay no ganó mundiales, en modo justicia tampoco, porque no pasó la pelota. 
+
+**Resultado esperado del partido con VAR fifa:**
+Gana brasil 2 a 0
+
+**Con otros modos de VAR:**
+
+* Con VAR justicia ciega, un gol de Brasil se anula y termina 1 a 0
+* Con VAR mas goles, el gol de Paraguay se convalida y termina 2 a 1
 
