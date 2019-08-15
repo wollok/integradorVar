@@ -51,6 +51,7 @@ Testear un partido con el VAR fifa en el que brasil le gana a paraguay 2 a 0, a 
 
 
 ![]("jugada min 5.jpg")
+
 Jugada de gol de Brasil:
 5' Con cualquier VAR el gol vale, porque no hay situaciones especiales
 
