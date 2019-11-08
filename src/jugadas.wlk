@@ -3,15 +3,17 @@ import equipo.*
 
 class Jugada {
 	var property minuto = 1
-	var property jugador = null
+	var property jugador
 	
 	method esSegundoTiempo() = minuto > 45	
 	
 	method cuantasTarjetasPara(equipo){
-		return if (self.sacaTarjeta() && jugador.equipo() == equipo) 1 else 0
+		return if (self.sacaTarjeta() && self.esDe(equipo)) self.cuantosJugadoresDe(equipo) else 0
 	}
 	method sacaTarjeta()
 	
+	method esDe(equipo) = equipo == jugador.equipo()
+	method cuantosJugadoresDe(equipo) = 1
 	method esGolDe(equipo) = false
 }
 
@@ -23,12 +25,10 @@ class JugadaDeGol inherits Jugada{
 		return referiVAR.terminoEnGol(self)  
 	}
 	override method esGolDe(equipo) {
-		return self.esGol() && self.equipo() == equipo 
+		return self.esGol() && self.esDe(equipo) 
 	}
 	
 	override method sacaTarjeta() = self.tiene("saco camiseta")
-	
-	method equipo() = jugador.equipo()
 	
 	method noTieneCircunstanciasEspeciales() = circunstanciasEspeciales.isEmpty()
 	
@@ -50,19 +50,20 @@ class Falta  inherits Jugada{
 class PeleaEnLaCancha inherits Jugada{
 	var jugadores = []
 	
+	method equipos() = jugadores.map{jugador=>jugador.equipo()}.asSet() 
+
 	override method sacaTarjeta() {
 		return 
 			jugadores.size() > 5 && 
-			self.cantidadEquipos() == 2
+			self.equipos().size() == 2
 	}
-	method cantidadEquipos() = jugadores.map{jugador=>jugador.equipo()}.asSet().size() 
 	
-	override method cuantasTarjetasPara(equipo){
-		return if (self.sacaTarjeta()) self.cuantosJugadoresDe(equipo) else 0
-	}
-	method cuantosJugadoresDe(equipo){
+	override method cuantosJugadoresDe(equipo){
 		return jugadores.count{jugador=>jugador.equipo() == equipo}
 	}
+
+	override method esDe(equipo) = self.equipos().contains(equipo)
+
 }
 
 class Insulto inherits Jugada {
