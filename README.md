@@ -1,4 +1,8 @@
-# El VAR 
+
+# El VAR
+
+[![build](https://github.com/wollok/integradorVar/actions/workflows/ci.yml/badge.svg)](https://github.com/wollok/integradorVar/actions/workflows/ci.yml)
+
 ## Ejercicio integrador tipo parcial
 
 **Sistema para analizar jugadas dudosas, goles y tarjetas.**
