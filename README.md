@@ -55,35 +55,35 @@ Justificar la utilidad del concepto de polimorfismo y de la herencia en la soluc
 ### Ejemplo de desarrollo de un partido
 (Con VAR en modo fifa)
 
-![](jugadaMin5.jpg)
+![Jugada VAR](./img/jugadaMin5.jpg)
 Jugada de gol de Brasil:
 5' El gol vale, porque no hay situaciones especiales
 
-![](jugadaMin10.jpg)
+![Jugada VAR](./img/jugadaMin10.jpg)
 10' Falta de mucha intensidad. Tarjeta para Paraguay
 
-![](jugadaMin34.jpg)
+![Jugada VAR](./img/jugadaMin34.jpg)
 34' Pelea multitudinaria entre ambos equipos. Tarjetas para todos, 4 Brasil y 2 Paraguay
 
-![](jugadaMin40.jpg)
+![Jugada VAR](./img/jugadaMin40.jpg)
 Jugada de gol de Brasil:
 40' El gol vale, porque Brasil ganó mundiales, en modo justicia no vale porque está adelantado. 
 
-![](jugadaMin41.jpg)
+![Jugada VAR](./img/jugadaMin41.jpg)
 41' Insulto al referí con palabras inapropiadas. Tarjeta para Brasil
 
-![](jugadaMin60.jpg)
+![Jugada VAR](./img/jugadaMin60.jpg)
 60' Jugada cualquiera, que no corresponde tarjeta ni gol
 
-![](jugadaMin80.jpg)
+![Jugada VAR](./img/jugadaMin80.jpg)
 80' Jugada cualquiera, que no corresponde tarjeta ni gol
 
-![](jugadaMin89.jpg)
+![Jugada VAR](./img/jugadaMin89.jpg)
 Jugada de gol de Paraguay:
 89' El gol no vale, porque Paraguay no ganó mundiales, en modo justicia tampoco, porque no pasó la pelota. 
 
 **Resultado esperado del partido con VAR fifa:**
-Gana brasil 2 a 0
+Gana Brasil 2 a 0
 
 **Con otros modos de VAR:**
 

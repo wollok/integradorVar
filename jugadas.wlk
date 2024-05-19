@@ -40,7 +40,7 @@ class JugadaDeGol inherits Jugada{
 
 
 class Falta  inherits Jugada{
-	var intensidadDeLaFalta
+	const intensidadDeLaFalta
 	
 	override method sacaTarjeta() {
  		return intensidadDeLaFalta > 75
@@ -48,7 +48,7 @@ class Falta  inherits Jugada{
 }
 
 class PeleaEnLaCancha inherits Jugada{
-	var jugadores = []
+	const jugadores = []
 	
 	method equipos() = jugadores.map{jugador=>jugador.equipo()}.asSet() 
 
@@ -67,7 +67,7 @@ class PeleaEnLaCancha inherits Jugada{
 }
 
 class Insulto inherits Jugada {
-	var insultoDicho
+	const insultoDicho
 	
 	override method sacaTarjeta() {
        return insultoDicho == "madre"

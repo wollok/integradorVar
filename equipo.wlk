@@ -1,7 +1,7 @@
 class Partido {
 	const jugadas = []
-	var local
-	var visitante
+	const local
+	const visitante
 	
 	method mejoroAlFinal() {
 		return self.cantJugadasSegundo() > self.cantJugadas()/2
